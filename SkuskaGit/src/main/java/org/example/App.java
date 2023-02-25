@@ -3,11 +3,17 @@ package org.example;
 public class App {
     public static void main(String[] args){
 
-        int cislo = Integer.parseInt(args[0]);
-        if (cislo == 5) {
-            System.out.println("cislo je 5");
-        } else {
-            System.out.println("cislo nie je 5");
+        int cislo = 1;
+
+        switch (cislo) {
+            case 1:
+                System.out.println("nieco");
+                break;
+
+            case 2:
+                System.out.println("nieco 2");
+            default:
+                System.out.println("Ani jedno z toho");
         }
 
     }
