@@ -2,20 +2,18 @@ package org.example;
 
 public class App {
     public static void main(String[] args){
+        int[] pole = new int[10];
 
-        int i = 1;
-        while (i<1) {
-            switch (i) {
-                case 1:
-                    System.out.println("nieco");
-                    break;
-                case 2:
-                    System.out.println("nieco 2");
-                    break;
-                default:
-                    System.out.println("Ani jedno z toho");
-            }
-            i++;
+        for (int i=0; i < pole.length; i++){
+            pole[i] = i;
         }
+
+        for (int i=0; i < pole.length; i++){
+            vypis(pole[i]);
+        }
+    }
+
+    public static void vypis(int a){
+        System.out.println("Cislo v poli je " + a);
     }
 }
