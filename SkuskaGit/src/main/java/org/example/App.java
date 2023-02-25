@@ -3,8 +3,8 @@ package org.example;
 public class App {
     public static void main(String[] args){
 
-        //int cislo = 1;
-        for (int i=1; i<3; i++) {
+        int i = 1;
+        while (i<1) {
             switch (i) {
                 case 1:
                     System.out.println("nieco");
@@ -15,6 +15,7 @@ public class App {
                 default:
                     System.out.println("Ani jedno z toho");
             }
+            i++;
         }
     }
 }
